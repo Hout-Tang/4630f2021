@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">firstApp_assignment</string>
+    <string name="myName">Hout Tang</string>
+    <string name="description">UMASS LOWELL SENIOR</string>
+    <string name="button1">ABOUT ME</string>
+    <string name="button2">CONTACT INFO</string>
+    <string name="travel">I like traveling.</string>
+    <string name="language">I speak 3 languages.</string>
+    <string name="work">Work at Big Tech One Day.</string>
+    <string name="school">UMass Lowell</string>
+    <string name="major">Computer Science Major</string>
+    <string name="schoolid">Senior Year</string>
+    <string name="phone">978 888 8888</string>
+    <string name="schoolemail">hout_tang@student.uml.edu</string>
+</resources>
