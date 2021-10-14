@@ -1,8 +1,8 @@
 Name: Hout Tang
-Email: hout_tang@student.uml.edu
+( Email: hout_tang@student.uml.edu )
 
 Partner Name: Minh Nguyen
-Partner Email: Minh_Nguyen5@student.uml.edu
+( Partner Email: Minh_Nguyen5@student.uml.edu )
 
 Project Title: New World
 
