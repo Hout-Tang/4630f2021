@@ -17,6 +17,7 @@ Lastly, we will have a chatting feature for our users to connect with their fell
 can chat, share articles, share pictures just like any other social media apps.
 
 Layout: We used Figma(web-drawn user interface) to design for our app's layout. 
+(The link to Figma is https://www.figma.com/file/cONnOACWt4jMn0u1Q2zuOu/Proposal-App-Layout?node-id=0%3A1)
 For now, we have 6 main layouts and many different small layouts for each main layouts. We will add
 more layouts here as we go.
 _Intro Screen: This will be the introduction for our app 
