@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_height="match_parent"
+    android:background="#1818EE"
+    tools:context=".ThirdScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/imgView"
+            android:src="@drawable/secondpage"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Contact Info"
+            android:layout_below="@id/imgView"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"></TextView>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:rowCount="5"
+        android:columnCount="1"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            app:cardElevation="4dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_height="0dp"
+            >
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traveling"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pacifico"
+                    android:letterSpacing="0.15"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="@string/travel"
+                    android:textColor="#334257"
+                    android:textSize="20dp"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            app:cardElevation="4dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/language"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pacifico"
+                    android:letterSpacing="0.15"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="45dp"
+                    android:text="@string/language"
+                    android:textColor="#334257"
+                    android:textSize="20dp"
+                    android:padding="10dp">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            app:cardElevation="4dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bigfour"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pacifico"
+                    android:letterSpacing="0.05"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="69dp"
+                    android:text="@string/work"
+                    android:textColor="#334257"
+                    android:textSize="20dp"
+                    android:padding="10dp">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</LinearLayout>

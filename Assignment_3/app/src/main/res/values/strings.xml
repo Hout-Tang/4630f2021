@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">firstApp_assignment</string>
+    <string name="myName">Hout Tang</string>
+    <string name="description">UMASS LOWELL SENIOR</string>
+    <string name="button1">WEATHER</string>
+    <string name="button2">FACTS </string>
+    <string name="button3">Investment Portfolio</string>
+    <string name="button4">RESUME</string>
+    <string name="button5">ABOUT ME</string>
+    <string name="travel">I like traveling.</string>
+    <string name="language">I speak 3 languages.</string>
+    <string name="work">Work at Big Tech One Day.</string>
+
+    <string name="now">I am now at Lowell, MA</string>
+    <string name="from">I am from Cambodia</string>
+    <string name="want">I want to be professional programmer</string>
+    <string name="Family">My family from Cambodia</string>
+    <string name="Else">We speak two languages</string>
+
+    <string name="pob">I was born in Cambodia</string>
+    <string name="liveNow">I live at Lowell now</string>
+    <string name="likeToLive">I like to live next to the beach</string>
+    <string name="sOther">My significant other was born in Cambodia</string>
+    <string name="else1">We love eating</string>
+
+
+    <string name="investment">I invest in cryto currencies</string>
+    <string name="investmentFamily">My family invest in land </string>
+    <string name="iOther">We own lots of houses and lands</string>
+
+
+    <string name="major">Computer Science Major</string>
+    <string name="schoolid">Senior Year</string>
+    <string name="phone">978 888 8888</string>
+    <string name="schoolemail">hout_tang@student.uml.edu</string>
+</resources>
