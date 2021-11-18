@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282C35"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarId" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/main_header_category_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="left"
+                android:padding="2dp"
+                android:text="@string/header"
+                android:textColor="@color/yellow"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarId"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/activity_category_types"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_categories"
+        android:id="@+id/hotNews_layout_mainScreen">
+
+        <TextView
+            android:id="@+id/hotNewsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="15dp"
+            android:padding="2dp"
+            android:text="@string/hot_news"
+            android:textColor="#FF5151"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_hot_news_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotNewsTV"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/activity_regular_news_rv_item"
+           />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/hotNews_layout_mainScreen"
+       android:id="@+id/allNews_layout_mainScreen"
+      >
+
+       <TextView
+           android:id="@+id/allNewsTV"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginEnd="15dp"
+           android:padding="2dp"
+           android:text="@string/all_news"
+           android:textColor="#FF9B6A"
+           android:textSize="25sp"
+           android:textStyle="bold" />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/main_all_news_RV"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/allNewsTV"
+           android:orientation="horizontal"
+           tools:listitem="@layout/activity_category_items"/>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_categories"
+        android:id="@+id/user_selected_category_mainScreen"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/category_selected_mainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="2dp"
+            android:text="Category title"
+            android:textColor="#FF5151"
+            android:textSize="26sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_items_userSelected_mainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/category_selected_mainScreen"
+            android:orientation="horizontal"
+            tools:listitem="@layout/activity_category_items"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/idLoadingBar"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
