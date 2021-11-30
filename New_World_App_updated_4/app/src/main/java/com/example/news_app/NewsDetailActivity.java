@@ -39,16 +39,16 @@ public class NewsDetailActivity extends AppCompatActivity {
         //step17: go to => work on the categoryRVAdapter
 
         //Step62:initialize the variable
-        titleTV   = findViewById(R.id.idTVTitle_NA);
-        subDescTV = findViewById(R.id.idTVSubDes_NA);
-        contentTV = findViewById(R.id.idTVContent_NA);
+        titleTV   = findViewById(R.id.idTVTitle);
+        subDescTV = findViewById(R.id.idTVSubDes);
+        contentTV = findViewById(R.id.idTVContent);
         newsTV    = findViewById(R.id.idIVNews);
         readNewsBtn= findViewById(R.id.idBtnReadNews);
 
         //Step63: set the text from the variable
         titleTV.setText(title);
-        subDescTV.setText(content);
-        contentTV.setText(desc);
+        subDescTV.setText(desc);
+        contentTV.setText(content);
         Picasso.get().load(imageURL).into(newsTV);
 
         //Step64: setOnclickListener

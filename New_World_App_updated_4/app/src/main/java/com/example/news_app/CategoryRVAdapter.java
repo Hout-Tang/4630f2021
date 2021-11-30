@@ -48,6 +48,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
             @Override
             public void onClick(View view) {
                 categoryClickInterface.onCategoryClick(position);
+
             }
             //Step28: go to mainActivity.java
         });

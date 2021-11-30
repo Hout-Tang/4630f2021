@@ -3,14 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hout1/AndroidStudioProjects/napp_v2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Hout1/AndroidStudioProjects/napp_v2/app/src/main/res/layout/activity_news_detail.xml" value="0.190625" />
+        <entry key="..\:/Users/Hout1/AndroidStudioProjects/napp_v2/app/src/main/res/layout/categories_rv_item.xml" value="0.190625" />
         <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app/app/src/main/res/layout/activity_news_detail.xml" value="0.176" />
         <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app/app/src/main/res/layout/categories_rv_item.xml" value="0.2" />
         <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app/app/src/main/res/layout/news_rv_item.xml" value="0.2" />
-        <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app_v1/app/src/main/res/layout/activity_main.xml" value="0.190625" />
-        <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app_v1/app/src/main/res/layout/activity_news_detail.xml" value="0.190625" />
-        <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app_v1/app/src/main/res/layout/categories_rv_item.xml" value="0.190625" />
-        <entry key="..\:/Users/Hout1/AndroidStudioProjects/news_app_v1/app/src/main/res/layout/news_rv_item.xml" value="0.190625" />
       </map>
     </option>
   </component>
