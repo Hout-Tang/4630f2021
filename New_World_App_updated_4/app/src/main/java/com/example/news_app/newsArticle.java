@@ -1,9 +1,9 @@
 package com.example.news_app;
 
-//Since the Articles contains source, author, title, and description,
+//Since the newsArticle contains source, author, title, and description,
 //We need to have sperate class for it to ease the display process
 
-public class Articles {
+public class newsArticle {
 
     //variable
     private String title;
@@ -53,7 +53,7 @@ public class Articles {
     }
 
     //contractor
-    public Articles(String title, String description, String urlToImage, String url, String content) {
+    public newsArticle(String title, String description, String urlToImage, String url, String content) {
         this.title = title;
         this.description = description;
         this.urlToImage = urlToImage;

@@ -41,7 +41,7 @@
         android:layout_below="@+id/idToolbar"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/categories_rv_item" />
+        tools:listitem="@layout/categoriy_item_RV" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNews"
@@ -51,7 +51,7 @@
         android:layout_marginTop="5dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/news_rv_item" />
+        tools:listitem="@layout/news_item_rv" />
 
     <ProgressBar
         android:layout_width="wrap_content"

@@ -4,14 +4,14 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Url;
 
-public interface RetrofitAPI {
+public interface API_retrofit {
 
     //1. Making get request
     //we need to specify the modal class which is the data that we will receive from the get request
 
     @GET
-    Call<NewsModal> getAllNews(@Url String url);
+    Call<News_Modal> getAllNews(@Url String url);
 
     @GET
-    Call<NewsModal> getNewsByCategory(@Url String url);
+    Call<News_Modal> getNewsByCategory(@Url String url);
 }

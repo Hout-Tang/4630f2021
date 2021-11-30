@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-public class NewsDetailActivity extends AppCompatActivity {
+public class NewsActivity_detailPage extends AppCompatActivity {
 
-    //Step14: getting data inside NewsDetailActivity
+    //Step14: getting data inside NewsActivity_detailPage
     //Step15: create variable
     String title,desc,content,imageURL,url;
 
@@ -28,8 +28,8 @@ public class NewsDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
-        //Step16: getting Data into the NewsDetailActivity by getStringExtra and fill in their names
-        //                                      key is from NewsRVAdapter class, which we put putExtra
+        //Step16: getting Data into the NewsActivity_detailPage by getStringExtra and fill in their names
+        //                                      key is from NewsAdapter_RV class, which we put putExtra
         title = getIntent().getStringExtra("title");
         desc  = getIntent().getStringExtra("desc");
         content = getIntent().getStringExtra("content");

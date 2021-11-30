@@ -3,11 +3,11 @@ package com.example.news_app;
 import java.util.ArrayList;
 
 //This class will be created for holding the status, totalResult, articles(will have it own class since it contains several items)
-public class NewsModal {
+public class News_Modal {
 
     private int totalResults;
     private String status;
-    private ArrayList<Articles> articles; //store articles in arraylist
+    private ArrayList<newsArticle> articles; //store articles in arraylist
 
     public int getTotalResults() {
         return totalResults;
@@ -25,15 +25,15 @@ public class NewsModal {
         this.status = status;
     }
 
-    public ArrayList<Articles> getArticles() {
+    public ArrayList<newsArticle> getArticles() {
         return articles;
     }
 
-    public void setArticles(ArrayList<Articles> articles) {
+    public void setArticles(ArrayList<newsArticle> articles) {
         this.articles = articles;
     }
 
-    public NewsModal(int totalResults, String status, ArrayList<Articles> articles) {
+    public News_Modal(int totalResults, String status, ArrayList<newsArticle> articles) {
         this.totalResults = totalResults;
         this.status = status;
         this.articles = articles;

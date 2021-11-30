@@ -1,7 +1,7 @@
 package com.example.news_app;
 
 //this class is for the horizontal  recycle view, which
-public class CategoryRVModal {
+public class CategoryModal_RV {
 
     private String category;
     private String categoryImageUrl;
@@ -22,7 +22,7 @@ public class CategoryRVModal {
         this.categoryImageUrl = categoryImageUrl;
     }
 
-    public CategoryRVModal(String category, String categoryImageUrl) {
+    public CategoryModal_RV(String category, String categoryImageUrl) {
         this.category = category;
         this.categoryImageUrl = categoryImageUrl;
     }

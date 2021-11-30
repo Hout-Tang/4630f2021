@@ -15,40 +15,39 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.ViewHolder> {
+public class CategoryAdapter_RV extends RecyclerView.Adapter<CategoryAdapter_RV.ViewHolder> {
 
     //Step20: create the variables
-    private ArrayList<CategoryRVModal> categoryRVModals;
+    private ArrayList<CategoryModal_RV> categoryModalRVS;
     private Context context;
     private CategoryClickInterface categoryClickInterface; //create variable for interface
 
     //Step21: create the constructor
-    public CategoryRVAdapter(ArrayList<CategoryRVModal> categoryRVModals, Context context, CategoryClickInterface categoryClickInterface) {
-        this.categoryRVModals = categoryRVModals;
+    public CategoryAdapter_RV(ArrayList<CategoryModal_RV> categoryModalRVS, Context context, CategoryClickInterface categoryClickInterface) {
+        this.categoryModalRVS = categoryModalRVS;
         this.context = context;
         this.categoryClickInterface = categoryClickInterface;
     }
 
     @NonNull
     @Override
-    public CategoryRVAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CategoryAdapter_RV.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //Step22: create the viewHolder and link with the categories_rv_item
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.categories_rv_item,parent,false);
-        return new CategoryRVAdapter.ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.categoriy_item_rv,parent,false);
+        return new CategoryAdapter_RV.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategoryRVAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull CategoryAdapter_RV.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         //Step26: setting the data on BindViewHolder method
-        CategoryRVModal categoryRVModal = categoryRVModals.get(position);
-        holder.categoryTV.setText(categoryRVModal.getCategory());
-        Picasso.get().load(categoryRVModal.getCategoryImageUrl()).into(holder.categoryIV);
+        CategoryModal_RV categoryModalRV = categoryModalRVS.get(position);
+        holder.categoryTV.setText(categoryModalRV.getCategory());
+        Picasso.get().load(categoryModalRV.getCategoryImageUrl()).into(holder.categoryIV);
         //Step27: setOnclicklistener , when the user click the item, we will pass the position
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 categoryClickInterface.onCategoryClick(position);
-
             }
             //Step28: go to mainActivity.java
         });
@@ -56,7 +55,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
 
     @Override
     public int getItemCount() {
-        return categoryRVModals.size(); // return the size of arrayList
+        return categoryModalRVS.size(); // return the size of arrayList
     }
 
     //Step23:Create interface update the data when clicking on the category item,
