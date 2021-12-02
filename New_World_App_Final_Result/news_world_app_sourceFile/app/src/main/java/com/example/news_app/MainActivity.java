@@ -1,3 +1,9 @@
+//Comp.4630: Mobile App Development I- Fall 2021
+//Professor: Dr.Haim Levkowitz
+//Final Project: News World App
+//Group member : Hout Tang & Minh Nguyen
+//Due date: Dec 02, 2021
+
 package com.example.news_app;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,8 +32,6 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter_R
     private RecyclerView newsRV;     //For horizontal RV
     private RecyclerView categoryRV; //For category RV
     private ProgressBar loadPB;
-    private int flag;
-
 
     //Step31: create arrayList for categoryRVModal class
     private ArrayList<newsArticle> newsArticleArrayList;
@@ -47,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter_R
         //Step35: initialize arrayList
         newsArticleArrayList = new ArrayList<>();
         categoryModalRVArrayList = new ArrayList<>();
-        flag =0;
         //Step36: pass the arrayList into Adapter
         newsAdapterRV = new NewsAdapter_RV(newsArticleArrayList,this);
         //                                                                             pass the onCategoryClick interface
@@ -132,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter_R
                 }
                 //Step57: notify the adapter
                 newsAdapterRV.notifyDataSetChanged();
-
             }
             //onFailure will be call if there is error incurred
             @Override
@@ -141,10 +143,7 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter_R
                 Toast.makeText(MainActivity.this,"Fail to get news",Toast.LENGTH_LONG).show();
             }
         });
-
-
     }
-
 
     //Step34: we will get the position where the category is clicked
     //        from that we will get the category from arrayList
